@@ -2,7 +2,7 @@ import streamlit as st
 import json
 from pathlib import Path
 
-# File paths (Streamlit Cloud writes to /app)
+# File paths (works locally and on Streamlit Cloud)
 DATA_FILE = Path("workout_data.json")
 TEMPLATE_FILE = Path("templates.json")
 
@@ -21,11 +21,4 @@ def load_templates():
             "Wednesday": ["Back Squat", "Leg Press", "Romanian Deadlifts"],
             "Thursday": ["EZ Bar Curl", "Triceps Pushdown", "Cable Hammer Curl"],
             "Friday": ["Lateral Raises", "Rear Delt Fly", "Wide Grip Pulldown"],
-            "Saturday": ["Flat Dumbbell Press", "Overhead Cable Extension", "Preacher Curl"]
-        }
-    }
-    save_templates(default)
-    return default
-
-def save_templates(templates):
-    with open(TEMPLATE_F_
+            "Saturday": ["Flat Dumbbell Press", "Overhead Cable Extension", "Preache]()
